@@ -1,0 +1,255 @@
+html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
+body {font-size: 15px; line-height: 1.64; }
+li{
+    list-style: none;
+}
+.chinese{
+    color:#434242 ;font-family: 'Open Sans', sans-serif ;font-size: 13.5px;line-height: 2;
+}
+
+.container { max-width: 1280px; padding: 40px 180px; height: auto;}
+.nav{
+    position: fixed;
+    float: left;
+    margin-left: 270px;
+    top: 0%;
+}
+.nav ul li{
+    float: left;
+}
+
+.nav ul li a{
+    display: block;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    color: #222222;
+    text-decoration: none;
+    line-height: 40px;
+}
+.nav ul li a:hover{
+    color: slategray;
+}
+h2 {
+    font-size: 54px;
+    text-align: center;
+    font-weight: 300;
+    color: #222222;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0px;
+}
+.h2-container{
+    width: 1500px;
+    height: 54px;
+    position: relative;
+    top: 10px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+.h2-p {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 20;
+    color: #868686;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.h2-p-awards {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 20;
+    color: #0c0c0c;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.h2-{
+    position: relative;
+    font-size: 4px;
+    text-align: center;
+    font-weight: 20;
+    color: #868686;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.p-leader{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 20;
+    color: dimgrey;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+.div-1{
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+.scroll-down { 
+    height: 30px; 
+    width: 60px; 
+    display: block; 
+    position: fixed; 
+    bottom: 0px; 
+    right: 6.3%; 
+    background-color:  dimgrey;
+    z-index: 6; 
+    text-align: center;
+}
+.scroll-down a{
+    font-size: 15px;
+    color: #222222;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.profile-left{
+    position: relative;
+    float: left;
+    top: 150px;
+    width: 400px;
+    height: 500px;
+    left: 150px;
+}
+
+.profile-mid{
+    position: relative;
+    float: left;
+    top: 150px;
+    width: 350px;
+    height: 500px;
+    left: 200px;
+}
+.profile-right{
+    position: relative;
+    float: left;
+    top: 150px;
+    width: 400px;
+    height: 500px;
+    left: 250px;
+}
+
+li{
+    list-style: none;
+}
+
+.awards-left{
+    position: relative;
+    float: left;
+    top: 150px;
+    width: 600px;
+    height: 500px;
+    left: 300px;
+}
+
+.awards-right{
+    position: relative;
+    float: left;
+    top: 150px;
+    width: 600px;
+    height: 500px;
+    left: 200px;
+}
+
+.experience-box{
+    position: relative;
+    top: 150px;
+    max-width: 1600px;
+    height: 240px;
+    margin: 30px auto;
+}
+.experience-box li{
+    float: left;
+    width: 360px;
+    height: 240px;
+    border-top: 1px solid #0c0c0c;
+    border-bottom: 1px solid #0c0c0c;
+}
+
+.experience-head{
+    font-size: 18px;
+    font-weight: 5000px;
+    text-align: left;
+}
+
+.experience-second{
+    position: relative;
+    top: 150px;
+    max-width: 1600px;
+    height: 110px;
+    border-bottom: 1px solid #0c0c0c;
+    text-align:center;
+}
+
+.experience-third{
+    position: relative;
+    top: 150px;
+    max-width: 1600px;
+    height: 150px;
+    border-bottom: 1px solid #0c0c0c;
+    text-align:center;
+}
+
+.contact-center{
+    position: relative;
+    top: 70px;
+    max-width: 1600px;
+    height: 250px;
+    text-align:center;
+}
+
+.all-pinglun-text{
+    position: relative;
+    top: 150px;
+    left: 450px;
+    max-width: 700px;
+    height: 50px;
+    text-align:center;    
+    font-size: 36px;
+    text-align: center;
+    font-weight: 20;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    
+}
+.all-pinglun{
+    position: relative;
+    top: 150px;
+    left: 200px;
+    width: 400px;
+    height: 300px;
+    text-align:center;    
+    border:5px solid #757474;
+    background-color:#fff;
+}
+
+.user_div{
+    position: relative;
+    top: 200px;
+    left: 400px;
+    max-width: 700px;
+    height: 30px;
+    text-align: center;
+    border:solid #0c0c0c;
+}
+
+.content_div{
+    position: relative;
+    top: 200px;
+    left: 400px;
+    max-width: 700px;
+    height: 100px;
+    text-align: center;
+    border:solid #0c0c0c;
+}
+
+.botton{
+    position: relative;
+    top: 200px;
+    height: 100px;
+}
