@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>田若楠的个人网站</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            body
+            {
+                background-image: url(image/bg.png);
+                background-repeat: no-repeat;
+                background-position: center top; 
+                background-attachment: fixed;
+            }
+        </style>
+    </head>
+<body>
+    <div style="position: fixed;top: 0%;float: left;margin-left: 330px">
+        <p style="font-size: 10px;font-weight: lighter;margin: 0px;">
+            _________________________________________________________________________________________________________________________________________________________________________________________________
+        </p>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="awards.html">Awards</a></li>
+            <li><a href="experience.html">Experiences</a></li>
+            <li><a href="diary.html">Diary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div style="position: fixed;top: 5.5%;float: left;margin-left: 330px">
+        <p style="font-size: 10px;font-weight: lighter;margin: 0px;">
+            _________________________________________________________________________________________________________________________________________________________________________________________________
+        </p>
+    </div>
+	<div style="position: fixed;bottom: 5%;float: leftt;margin-left: 500px">
+        <table>
+            <tr style="text-align: center;">
+                <td style="text-align: center;">Github&copy;<a href="https://github.com/RuonanTian">Tian Ruonan</a></td>
+            </tr>
+            <tr>
+                <td>
+                    Any comments and suggestions,please <a href="contact.html">contact me</a>. Last modified:2020-05
+                </td>
+            </tr>
+        </table>
+    </div>
+	<div class="div-1">
+		<div class="container">
+			<p id="txtDom" style="font-size: 70px;margin: 0px;line-height: 60px;">Tian Ruonan</p>
+			<p style="font-size: 10px;font-weight: lighter;margin: 0px;">
+				________________________________________________________________________________________________________
+			</p>
+			<p style="font-size: 30px;margin: 0px;">Interactive resume</p>
+		</div>
+	</?>
+	<script>
+        var txtAnim = {
+            len: 0,
+            txtDom: "",
+            arrTxt: [],
+            init: function (obj) {
+                this.obj = obj;
+                this.txtDom = obj.innerHTML.replace(/\s+/g, "");
+                this.len = this.txtDom.length;
+                obj.innerHTML = "";
+                this.addDom();
+            },
+            addDom: function () {
+                for (var i = 0; i < this.len; i++) {
+                    var spanDom = document.createElement("span");
+                    spanDom.innerHTML = this.txtDom.substring(i, i + 1);
+                    this.obj.appendChild(spanDom);
+                    this.arrTxt.push(spanDom);
+                };
+                for (var j = 0; j < this.len; j++) {
+                    this.arrTxt[j].style.position = "relative";
+                };
+                this.strat();
+
+            },
+            strat: function () {
+                for (var i = 0; i < this.len; i++) {
+                    this.arrTxt[i].onmouseover = function () {
+                        this.stop = 0;
+                        this.speed = -1;
+                        var $this = this;
+                        this.timer = setInterval(function () {
+
+                            $this.stop += $this.speed; //0  += -1
+                            if ($this.stop <= -20) {
+                                $this.speed = 1;
+                            }
+
+                            $this.style.top = $this.stop + "px";
+
+                            if ($this.stop >= 0) {
+                                clearInterval($this.timer)
+                                $this.style.top = 0 + "px";
+                            };
+                        }, 15);
+                    };
+                }
+            }
+        }
+        var txtDom = document.getElementById("txtDom");
+        txtAnim.init(txtDom);
+    </script>
+</body>
+</html>
